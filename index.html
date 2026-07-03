@@ -3,244 +3,435 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Dr. Shreyas S R</title>
+    <title>Shreyas S R — Reinforcement Learning Researcher</title>
     <meta
       name="description"
-      content="Dr. Shreyas S R, postdoctoral researcher at Trinity College Dublin working on reinforcement learning, stochastic games, and sustainable mobility."
+      content="Shreyas S R — Postdoctoral Researcher at Trinity College Dublin working on reinforcement learning, stochastic games, dynamic programming, and machine learning for sustainable mobility."
     />
-    <meta property="og:title" content="Dr. Shreyas S R" />
+    <meta property="og:title" content="Shreyas S R — Reinforcement Learning Researcher" />
     <meta
       property="og:description"
-      content="Postdoctoral researcher in reinforcement learning, stochastic games, and sustainable mobility."
+      content="Reinforcement-learning algorithms with provable convergence guarantees — dynamic programming, stochastic games, and ML for sustainable mobility."
     />
     <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0d2137" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230d2137'/%3E%3Cpolyline points='5,25 11,15 16,19 22,10 27,8' fill='none' stroke='%23d5dee7' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='27' cy='8' r='3' fill='%23d9a441'/%3E%3C/svg%3E"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Dr. Shreyas S R home">Dr. Shreyas S R</a>
-      <nav class="nav" aria-label="Primary navigation">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="masthead" id="top">
+      <a class="brand" href="#top" aria-label="Shreyas S R — home">
+        <span class="brand-glyph" aria-hidden="true">
+          <svg viewBox="0 0 34 20" width="34" height="20" focusable="false">
+            <line class="bg-line" x1="2" y1="6" x2="32" y2="6" />
+            <polyline
+              class="bg-path"
+              points="2,18 8,9 14,13 20,7 26,6.6 32,6"
+            />
+            <circle class="bg-dot" cx="32" cy="6" r="2.4" />
+          </svg>
+        </span>
+        <span class="brand-name">Shreyas&nbsp;S&nbsp;R</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
         <a href="#teaching">Teaching</a>
-        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#contact">Contact</a>
       </nav>
     </header>
 
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-content">
-          <p class="eyebrow">Postdoctoral Researcher</p>
-          <h1 id="hero-title">Dr. Shreyas S R</h1>
-          <p class="hero-copy">
-            Reinforcement learning, stochastic games, dynamic programming, and machine
-            learning for sustainable mobility.
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Postdoctoral Researcher — Trinity College Dublin</p>
+          <h1 class="hero-title">Shreyas&nbsp;S&nbsp;R</h1>
+          <p class="lead">
+            I design reinforcement-learning algorithms with provable convergence
+            guarantees — from dynamic programming and two-player stochastic games
+            to machine learning for sustainable mobility.
           </p>
-          <div class="hero-actions" aria-label="Profile links">
-            <a href="mailto:shreyassr123@gmail.com">Email</a>
-            <a href="https://scholar.google.com/citations?user=EdrOCiwAAAAJ&hl=en">Google Scholar</a>
-            <a href="https://github.com/shreyassr123">GitHub</a>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:shreyassr123@gmail.com">Email me</a>
+            <a class="btn" href="https://scholar.google.com/citations?user=EdrOCiwAAAAJ&hl=en">Google&nbsp;Scholar</a>
+            <a class="btn" href="https://github.com/shreyassr123">GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/in/shreyas-sr/">LinkedIn</a>
           </div>
+        </div>
+
+        <figure class="hero-figure" aria-labelledby="fig-cap">
+          <svg
+            class="convergence"
+            viewBox="0 0 480 340"
+            role="img"
+            aria-labelledby="conv-title conv-desc"
+          >
+            <title id="conv-title">A converging iterative sequence</title>
+            <desc id="conv-desc">
+              A sequence of value estimates oscillates and settles onto the
+              optimal value line, illustrating algorithmic convergence.
+            </desc>
+
+            <!-- axes -->
+            <line class="axis" x1="60" y1="300" x2="452" y2="300" />
+            <line class="axis" x1="60" y1="40" x2="60" y2="300" />
+
+            <!-- optimal line V* -->
+            <line class="optimal" x1="60" y1="110" x2="452" y2="110" />
+            <text class="tick-label optimal-label" x="456" y="114">V*</text>
+
+            <!-- convergence path -->
+            <polyline
+              class="conv-path"
+              points="60,290 102.2,150 144.4,70 186.7,140 228.9,95 271.1,122 313.3,105 355.6,114 397.8,109 440,110"
+            />
+
+            <!-- iterate points -->
+            <g class="conv-points">
+              <circle cx="60" cy="290" r="3.6" style="--i:0" />
+              <circle cx="102.2" cy="150" r="3.6" style="--i:1" />
+              <circle cx="144.4" cy="70" r="3.6" style="--i:2" />
+              <circle cx="186.7" cy="140" r="3.6" style="--i:3" />
+              <circle cx="228.9" cy="95" r="3.6" style="--i:4" />
+              <circle cx="271.1" cy="122" r="3.6" style="--i:5" />
+              <circle cx="313.3" cy="105" r="3.6" style="--i:6" />
+              <circle cx="355.6" cy="114" r="3.6" style="--i:7" />
+              <circle cx="397.8" cy="109" r="3.6" style="--i:8" />
+              <circle class="conv-fixed" cx="440" cy="110" r="4.8" style="--i:9" />
+            </g>
+
+            <text class="tick-label" x="60" y="322">k = 0</text>
+            <text class="tick-label" x="404" y="322">iterations</text>
+            <text class="annot" x="150" y="326">Vₖ&nbsp;&#8594;&nbsp;V*</text>
+          </svg>
+          <figcaption id="fig-cap">
+            Value iterates converging to the optimum — the core of the algorithms I study.
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- AT A GLANCE -->
+      <section class="glance" aria-label="At a glance">
+        <div class="glance-item">
+          <span class="glance-k">Position</span>
+          <span class="glance-v">Postdoctoral Researcher, Trinity College Dublin</span>
+        </div>
+        <div class="glance-item">
+          <span class="glance-k">Doctorate</span>
+          <span class="glance-v">Ph.D. in Mathematics, IIT Indore</span>
+        </div>
+        <div class="glance-item">
+          <span class="glance-k">Focus</span>
+          <span class="glance-v">Reinforcement Learning · Stochastic Games</span>
+        </div>
+        <div class="glance-item">
+          <span class="glance-k">Record</span>
+          <span class="glance-v">6 peer-reviewed journal articles</span>
         </div>
       </section>
 
-      <section id="about" class="section about-grid">
-        <div>
-          <p class="section-kicker">About</p>
-          <h2>Researcher in reinforcement learning and sustainable mobility.</h2>
+      <!-- ABOUT -->
+      <section id="about" class="section about">
+        <div class="section-head">
+          <p class="kicker">About</p>
+          <h2>Reinforcement learning, from theory to sustainable mobility.</h2>
         </div>
         <div class="prose">
           <p>
-            I am currently a Postdoctoral Researcher in the School of Computer Science
-            and Statistics at Trinity College Dublin. I received my Ph.D. in Mathematics
-            from Indian Institute of Technology Indore, where my research focused on the
-            development of efficient reinforcement learning algorithms with rigorous
-            theoretical guarantees.
+            I am a Postdoctoral Researcher in the School of Computer Science and
+            Statistics at Trinity College Dublin. I earned my Ph.D. in Mathematics
+            from the Indian Institute of Technology Indore, where my research
+            focused on developing efficient reinforcement-learning algorithms with
+            rigorous theoretical guarantees.
           </p>
           <p>
-            My research interests lie in reinforcement learning, encompassing both
-            model-free and model-based approaches, with a particular emphasis on
-            developing computationally efficient algorithms supported by rigorous
-            theoretical convergence guarantees. My work draws on techniques from dynamic
-            programming, reinforcement learning, and multi-agent reinforcement learning,
-            especially in the context of two-player zero-sum stochastic games.
+            My interests span both model-free and model-based reinforcement
+            learning, with a particular emphasis on computationally efficient
+            algorithms supported by rigorous convergence guarantees. My work draws
+            on dynamic programming, reinforcement learning, and multi-agent
+            reinforcement learning — especially two-player zero-sum stochastic
+            games.
           </p>
           <p>
-            At Trinity, I am involved in the research project "Machine Learning for
-            Sustainable Mobility," which focuses on developing intelligent solutions for
-            sustainable transportation systems. As part of this project, I contribute to
-            the design and investigation of software platforms for Personalised Mobility
-            as a Service (PMaaS), leveraging machine learning techniques to improve
-            mobility planning, efficiency, and user experience.
+            At Trinity I contribute to the project <em>Machine Learning for
+            Sustainable Mobility</em>, designing and investigating software
+            platforms for Personalised Mobility as a Service (PMaaS) that use
+            machine learning to improve mobility planning, efficiency, and user
+            experience.
           </p>
         </div>
       </section>
 
-      <section id="research" class="section muted">
-        <div class="section-heading">
-          <p class="section-kicker">Research</p>
-          <h2>Interests</h2>
+      <!-- RESEARCH -->
+      <section id="research" class="section band-dark research">
+        <div class="section-head">
+          <p class="kicker">Research</p>
+          <h2>What I work on</h2>
         </div>
-        <div class="research-panel">
-          <div>
-            <h3>What I do</h3>
+        <div class="research-grid">
+          <article class="research-card">
+            <h3>Efficient algorithms with guarantees</h3>
             <p>
-              I work in the area of Reinforcement Learning (RL), which focuses on
-              finding an optimal policy in stochastic environments. My research centers
-              on developing efficient algorithms for solving Bellman's optimality
-              equation and, more broadly, on improving methods across both model-based
-              and model-free reinforcement learning.
+              I work in reinforcement learning, which seeks an optimal policy in
+              stochastic environments. My research centres on efficient algorithms
+              for solving Bellman's optimality equation, and more broadly on
+              improving methods across both model-based and model-free
+              reinforcement learning.
             </p>
-          </div>
-          <div>
-            <h3>Current directions</h3>
+          </article>
+          <article class="research-card">
+            <h3>Multi-agent &amp; game-theoretic settings</h3>
             <p>
-              I have recently begun exploring multi-agent reinforcement learning, with a
-              particular interest in two-player zero-sum stochastic games and their
-              connections to dynamic programming and game-theoretic solution concepts.
-              Looking ahead, I am keen on applying these algorithmic frameworks to
-              real-world problems, bridging theory with practical impact.
+              More recently I have been exploring multi-agent reinforcement
+              learning, with a particular interest in two-player zero-sum
+              stochastic games and their connections to dynamic programming and
+              game-theoretic solution concepts — and in bridging this theory with
+              practical, real-world impact.
             </p>
-          </div>
+          </article>
         </div>
-      </section>
-
-      <section id="publications" class="section">
-        <div class="section-heading">
-          <p class="section-kicker">Publications</p>
-          <h2>Journal Publications</h2>
-        </div>
-        <ol class="publication-list">
-          <li>
-            <span class="publication-title">
-              Double Successive Over-Relaxation Q-Learning with an Extension to Deep
-              Reinforcement Learning.
-            </span>
-            <span>Shreyas, S. R. IEEE Transactions on Neural Networks and Learning Systems, 36, 19467-19472 (2025).</span>
-            <a href="https://doi.org/10.1109/TNNLS.2025.3576581">DOI</a>
-          </li>
-          <li>
-            <span class="publication-title">
-              A Multi-Step Minimax Q-Learning Algorithm for Two-Player Zero-Sum Markov
-              Games.
-            </span>
-            <span>Shreyas, S. R. and Antony Vijesh. Neurocomputing, 657, Article 131552 (2025).</span>
-            <a href="https://doi.org/10.1016/j.neucom.2025.131552">DOI</a>
-          </li>
-          <li>
-            <span class="publication-title">
-              A Note on Generalized Second-Order Value Iteration in Markov Decision
-              Processes.
-            </span>
-            <span>Antony Vijesh, S. R. Shreyas, and M. S. Abdulla. Journal of Optimization Theory and Applications, 199, 1022-1049 (2023).</span>
-            <a href="https://doi.org/10.1007/s10957-023-02309-x">DOI</a>
-          </li>
-          <li>
-            <span class="publication-title">A Weighted Smooth Q-Learning Algorithm.</span>
-            <span>Antony Vijesh and S. R. Shreyas. IEEE Control Systems Letters, 9, 21-26 (2025).</span>
-            <a href="https://doi.org/10.1109/LCSYS.2025.3551265">DOI</a>
-          </li>
-          <li>
-            <span class="publication-title">
-              Order of Convergence Estimate for a Stochastic Iterative Method for the
-              Mode and Its Size.
-            </span>
-            <span>A. Sharma, S. R. Shreyas, and Antony Vijesh. Communications in Statistics - Simulation and Computation, 1-15 (2026).</span>
-            <a href="https://doi.org/10.1080/03610918.2026.2671369">DOI</a>
-          </li>
-          <li>
-            <span class="publication-title">
-              Characterization of Signed Paths and Cycles Admitting Minus Dominating
-              Function.
-            </span>
-            <span>S. R. Shreyas and M. Joseph. Communications in Combinatorics and Optimization, 5, 61-68 (2020).</span>
-            <a href="https://comb-opt.azaruniv.ac.ir/article_13977.html">Available online</a>
-          </li>
-        </ol>
-
-        <div class="section-heading compact">
-          <p class="section-kicker">Activities</p>
-          <h2>Conferences, Workshops, and Internships</h2>
-        </div>
-        <ul class="timeline-list">
-          <li>Completed an internship at Indian Institute of Science, Bengaluru, from April 2017 to June 2017.</li>
-          <li>Participated in the IEEE Computational Intelligence Summer School on Deep Learning and Computational Intelligence: Theory and Applications at Indian Institute of Technology Indore in May 2022.</li>
-          <li>Attended the workshop AI-MPOWER: Empowering Educators for the Data-Driven Future at Indian Institute of Science in November 2023.</li>
-          <li>Presented my research work at the ICC Conference 2025, organized by Indian Institute of Science.</li>
+        <ul class="tag-row" aria-label="Areas of expertise">
+          <li>Reinforcement Learning</li>
+          <li>Dynamic Programming</li>
+          <li>Stochastic Games</li>
+          <li>Q-Learning</li>
+          <li>Convergence Analysis</li>
+          <li>Sustainable Mobility</li>
         </ul>
       </section>
 
-      <section class="section muted split-section">
-        <div>
-          <p class="section-kicker">Education</p>
-          <h2>Academic Background</h2>
+      <!-- PUBLICATIONS -->
+      <section id="publications" class="section publications">
+        <div class="section-head">
+          <p class="kicker">Publications</p>
+          <h2>Selected journal articles</h2>
+        </div>
+
+        <a class="feature-pub" href="https://doi.org/10.1109/TNNLS.2025.3576581">
+          <span class="feature-flag">01 — Featured · IEEE TNNLS 2025</span>
+          <span class="feature-title">
+            Double Successive Over-Relaxation Q-Learning with an Extension to Deep
+            Reinforcement Learning
+          </span>
+          <span class="feature-meta">
+            Shreyas, S. R. — IEEE Transactions on Neural Networks and Learning
+            Systems, 36, 19467–19472 (2025).
+          </span>
+          <span class="feature-link">Read via DOI&nbsp;&#8594;</span>
+        </a>
+
+        <ol class="pub-list">
+          <li class="pub">
+            <span class="pub-index" aria-hidden="true">02</span>
+            <div class="pub-body">
+              <p class="pub-title">
+                A Multi-Step Minimax Q-Learning Algorithm for Two-Player Zero-Sum
+                Markov Games
+              </p>
+              <p class="pub-meta">
+                Shreyas, S. R. and Antony Vijesh — Neurocomputing, 657, Article
+                131552 (2025).
+              </p>
+            </div>
+            <a class="pub-doi" href="https://doi.org/10.1016/j.neucom.2025.131552">DOI</a>
+          </li>
+
+          <li class="pub">
+            <span class="pub-index" aria-hidden="true">03</span>
+            <div class="pub-body">
+              <p class="pub-title">
+                A Note on Generalized Second-Order Value Iteration in Markov
+                Decision Processes
+              </p>
+              <p class="pub-meta">
+                Antony Vijesh, S. R. Shreyas, and M. S. Abdulla — Journal of
+                Optimization Theory and Applications, 199, 1022–1049 (2023).
+              </p>
+            </div>
+            <a class="pub-doi" href="https://doi.org/10.1007/s10957-023-02309-x">DOI</a>
+          </li>
+
+          <li class="pub">
+            <span class="pub-index" aria-hidden="true">04</span>
+            <div class="pub-body">
+              <p class="pub-title">A Weighted Smooth Q-Learning Algorithm</p>
+              <p class="pub-meta">
+                Antony Vijesh and S. R. Shreyas — IEEE Control Systems Letters, 9,
+                21–26 (2025).
+              </p>
+            </div>
+            <a class="pub-doi" href="https://doi.org/10.1109/LCSYS.2025.3551265">DOI</a>
+          </li>
+
+          <li class="pub">
+            <span class="pub-index" aria-hidden="true">05</span>
+            <div class="pub-body">
+              <p class="pub-title">
+                Order of Convergence Estimate for a Stochastic Iterative Method
+                for the Mode and Its Size
+              </p>
+              <p class="pub-meta">
+                A. Sharma, S. R. Shreyas, and Antony Vijesh — Communications in
+                Statistics – Simulation and Computation, 1–15 (2026).
+              </p>
+            </div>
+            <a class="pub-doi" href="https://doi.org/10.1080/03610918.2026.2671369">DOI</a>
+          </li>
+
+          <li class="pub">
+            <span class="pub-index" aria-hidden="true">06</span>
+            <div class="pub-body">
+              <p class="pub-title">
+                Characterization of Signed Paths and Cycles Admitting Minus
+                Dominating Function
+              </p>
+              <p class="pub-meta">
+                S. R. Shreyas and M. Joseph — Communications in Combinatorics and
+                Optimization, 5, 61–68 (2020).
+              </p>
+            </div>
+            <a class="pub-doi" href="https://comb-opt.azaruniv.ac.ir/article_13977.html">Link</a>
+          </li>
+        </ol>
+
+        <div class="section-head compact">
+          <p class="kicker">Activities</p>
+          <h2>Conferences, workshops &amp; internships</h2>
+        </div>
+        <ul class="timeline">
+          <li>
+            <span class="tl-year">2017</span>
+            <span class="tl-text">Research internship at the Indian Institute of Science, Bengaluru (Apr–Jun).</span>
+          </li>
+          <li>
+            <span class="tl-year">2022</span>
+            <span class="tl-text">IEEE Computational Intelligence Summer School on Deep Learning and Computational Intelligence, IIT Indore (May).</span>
+          </li>
+          <li>
+            <span class="tl-year">2023</span>
+            <span class="tl-text">Workshop — AI-MPOWER: Empowering Educators for the Data-Driven Future, Indian Institute of Science (Nov).</span>
+          </li>
+          <li>
+            <span class="tl-year">2025</span>
+            <span class="tl-text">Presented research at the ICC Conference 2025, organised by the Indian Institute of Science.</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- EDUCATION + AWARDS -->
+      <section class="section band-soft two-col">
+        <div class="col">
+          <p class="kicker">Education</p>
+          <h2>Academic background</h2>
           <ul class="clean-list">
-            <li>Ph.D., Department of Mathematics, IIT Indore, Madhya Pradesh, India.</li>
-            <li>Masters in Mathematics, Christ University, Bengaluru, Karnataka, India.</li>
-            <li>Bachelors in Physics, Mathematics, and Computer Science, Govt. Science College, Hassan, Karnataka, India.</li>
-            <li>Schooling from Jawahar Navodaya Vidyalaya, Hassan, Karnataka, India.</li>
+            <li><strong>Ph.D., Mathematics</strong> — IIT Indore, Madhya Pradesh, India.</li>
+            <li><strong>M.Sc., Mathematics</strong> — Christ University, Bengaluru, India.</li>
+            <li><strong>B.Sc., Physics, Mathematics &amp; Computer Science</strong> — Govt. Science College, Hassan, India.</li>
+            <li><strong>Schooling</strong> — Jawahar Navodaya Vidyalaya, Hassan, India.</li>
           </ul>
         </div>
-        <div>
-          <p class="section-kicker">Recognition</p>
-          <h2>Awards and Achievements</h2>
+        <div class="col">
+          <p class="kicker">Recognition</p>
+          <h2>Awards &amp; achievements</h2>
           <ul class="clean-list">
             <li>Senior Research Fellowship (SRF), 2022.</li>
             <li>Junior Research Fellowship (JRF), 2020.</li>
-            <li>All India Rank - 81 in CSIR-NET, 2019.</li>
-            <li>University-Level Lectureship Contest First Prize, 2016.</li>
-            <li>Cleared National Means Cum Merit Scholarship Exam, 2009.</li>
+            <li>All India Rank 81 — CSIR-NET, 2019.</li>
+            <li>First Prize, University-Level Lectureship Contest, 2016.</li>
+            <li>Cleared National Means-cum-Merit Scholarship Exam, 2009.</li>
           </ul>
         </div>
       </section>
 
-      <section id="teaching" class="section teaching-books">
-        <div>
-          <p class="section-kicker">Teaching</p>
-          <h2>Teaching Assistantships</h2>
-          <ul class="feature-list">
-            <li>MA106, Linear Algebra and ODE, B.Tech course, March-May 2021.</li>
-            <li>MA105, Calculus, B.Tech course, March-May 2022.</li>
-            <li>MA204, Numerical Methods, B.Tech course, March-May 2023.</li>
+      <!-- TEACHING + BOOKS -->
+      <section id="teaching" class="section two-col">
+        <div class="col">
+          <p class="kicker">Teaching</p>
+          <h2>Teaching assistantships</h2>
+          <ul class="clean-list">
+            <li><strong>MA106</strong> — Linear Algebra &amp; ODE (B.Tech), Mar–May 2021.</li>
+            <li><strong>MA105</strong> — Calculus (B.Tech), Mar–May 2022.</li>
+            <li><strong>MA204</strong> — Numerical Methods (B.Tech), Mar–May 2023.</li>
           </ul>
         </div>
-        <div id="books">
-          <p class="section-kicker">Miscellaneous</p>
-          <h2>Favourite Books</h2>
+        <div class="col" id="books">
+          <p class="kicker">Off the clock</p>
+          <h2>Books I return to</h2>
           <ul class="book-list">
-            <li><span>Surely You're Joking, Mr. Feynman!</span> Richard P. Feynman</li>
-            <li><span>Eye of the Hurricane: An Autobiography</span> Richard Bellman</li>
-            <li><span>A Certain Ambiguity: A Mathematical Novel</span> Gaurav Suri and Hartosh Singh Bal</li>
-            <li><span>A Mathematician's Lament</span> Paul Lockhart</li>
-            <li><span>Animal Farm</span> George Orwell</li>
-            <li><span>The Psychology of Money</span> Morgan Housel</li>
-            <li><span>Fermat's Last Theorem</span> Simon Singh</li>
-            <li><span>The Shiva Trilogy</span> Amish Tripathi</li>
-            <li><span>Siddhartha</span> Hermann Hesse</li>
-            <li><span>The Story of My Experiments with Truth</span> Mahatma Gandhi</li>
+            <li><span class="book-title">Surely You're Joking, Mr. Feynman!</span><span class="book-author">Richard P. Feynman</span></li>
+            <li><span class="book-title">Eye of the Hurricane: An Autobiography</span><span class="book-author">Richard Bellman</span></li>
+            <li><span class="book-title">A Certain Ambiguity</span><span class="book-author">Suri &amp; Bal</span></li>
+            <li><span class="book-title">A Mathematician's Lament</span><span class="book-author">Paul Lockhart</span></li>
+            <li><span class="book-title">Fermat's Last Theorem</span><span class="book-author">Simon Singh</span></li>
+            <li><span class="book-title">The Psychology of Money</span><span class="book-author">Morgan Housel</span></li>
+            <li><span class="book-title">Siddhartha</span><span class="book-author">Hermann Hesse</span></li>
+            <li><span class="book-title">The Story of My Experiments with Truth</span><span class="book-author">M. K. Gandhi</span></li>
           </ul>
         </div>
       </section>
     </main>
 
-    <footer id="contact" class="footer">
-      <div>
-        <p class="section-kicker">Contact</p>
-        <h2>Get in touch</h2>
-        <p><a href="mailto:shreyassr123@gmail.com">shreyassr123@gmail.com</a></p>
-        <address>
-          Lloyd Institute, Lab No. 2.14, 42A Pearse St.<br />
-          Dublin, D02 R123<br />
-          Trinity College Dublin, Ireland
-        </address>
+    <!-- CONTACT / FOOTER -->
+    <footer id="contact" class="footer band-dark">
+      <div class="footer-main">
+        <div class="footer-lead">
+          <p class="kicker">Contact</p>
+          <h2>Let's talk research or collaboration.</h2>
+          <p class="footer-email">
+            <a href="mailto:shreyassr123@gmail.com">shreyassr123@gmail.com</a>
+          </p>
+          <address>
+            Lloyd Institute, Lab 2.14, 42A Pearse St.<br />
+            Trinity College Dublin, Dublin D02 R123, Ireland
+          </address>
+        </div>
+        <nav class="footer-social" aria-label="Social and academic profiles">
+          <a href="https://scholar.google.com/citations?user=EdrOCiwAAAAJ&hl=en">Google Scholar</a>
+          <a href="https://www.linkedin.com/in/shreyas-sr/">LinkedIn</a>
+          <a href="https://github.com/shreyassr123">GitHub</a>
+          <a href="https://twitter.com/shreyassr123">Twitter / X</a>
+        </nav>
       </div>
-      <div class="social-links" aria-label="Social links">
-        <a href="https://www.linkedin.com/in/shreyas-sr/">LinkedIn</a>
-        <a href="https://scholar.google.com/citations?user=EdrOCiwAAAAJ&hl=en">Google Scholar</a>
-        <a href="https://github.com/shreyassr123">GitHub</a>
-        <a href="https://twitter.com/shreyassr123">Twitter</a>
+      <div class="colophon">
+        <span>© <span id="year">2026</span> Shreyas S R</span>
+        <span>Dublin, Ireland</span>
       </div>
     </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Subtle scroll reveal — progressive enhancement, respects reduced motion.
+      var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (!reduce && "IntersectionObserver" in window) {
+        var targets = document.querySelectorAll(
+          ".section-head, .prose, .research-card, .feature-pub, .pub, .timeline li, .two-col .col, .glance-item"
+        );
+        targets.forEach(function (el) { el.classList.add("reveal"); });
+        var io = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (e) {
+              if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+            });
+          },
+          { rootMargin: "0px 0px -8% 0px", threshold: 0.08 }
+        );
+        targets.forEach(function (el) { io.observe(el); });
+      }
+    </script>
   </body>
 </html>
